@@ -1,0 +1,14 @@
+{
+  "image": "kalilinux/kali-rolling",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "4gb"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.vscode-terminal"]
+    }
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y nmap nikto sqlmap curl net-tools",
+  "remoteUser": "root"
+}
